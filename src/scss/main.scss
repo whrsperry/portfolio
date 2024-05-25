@@ -1,0 +1,19 @@
+@import 'settings/global';
+
+// Import base styles
+@import 'base/reset';
+@import 'base/color';
+@import 'base/font-family';
+@import 'base/font-weight';
+@import 'base/breakpoints';
+
+// Import components styles
+@import 'components/common/button';
+@import 'components/layout/header';
+@import 'components/layout/footer';
+
+// Import utils styles
+@import 'utils/function';
+@import 'utils/helpers';
+@import 'utils/media-queries';
+@import 'utils/mixins';

@@ -1,0 +1,61 @@
+@use 'base/breakpoints' as bp;
+
+@mixin max($max-width: 0) {
+  @media screen and (max-width: $max-width) {
+    @content;
+  }
+}
+
+@mixin min($min-width: 0) {
+  @media screen and (min-width: $min-width) {
+    @content;
+  }
+}
+
+@mixin minmax($min-width: 0, $max-width: 0) {
+  @media screen and (min-width: $min-width) and (max-width: $max-width) {
+    @content;
+  }
+}
+
+@mixin mx1200 {
+  @media screen and (max-width: bp.$desk-lg) {
+    @content;
+  }
+}
+
+@mixin mx1024 {
+  @media screen and (max-width: bp.$desk-sm) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: bp.$tablet) {
+    @content;
+  }
+}
+
+@mixin mx980 {
+  @media screen and (max-width: 980px) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: bp.$sp) {
+    @content;
+  }
+}
+
+@mixin sp-xs {
+  @media screen and (max-width: bp.$sp-xs) {
+    @content;
+  }
+}
+
+@mixin mxN($mxN) {
+  @media screen and (max-width: $mxN) {
+    @content;
+  }
+}

@@ -1,0 +1,33 @@
+@use 'utils/media-queries' as mq;
+
+.text-center {
+  text-align: center !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.pc {
+  display: block;
+  @include mq.sp {
+    display: none;
+  }
+}
+
+.sp {
+  display: none;
+  @include mq.sp {
+    display: block;
+  }
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -1,0 +1,24 @@
+@function getsp($val) {
+  $result: calc(330 / 750) * $val;
+  @return $result;
+}
+
+@function getsp375($val) {
+  $result: calc(375 / 750) * $val;
+  @return $result;
+}
+
+@function getem($base-size, $illust-lheight) {
+  @return calc($illust-lheight / $base-size) * 1em;
+}
+
+@function getrem($px, $base-font-size: 16px) {
+  @return #{$px / $base-font-size}rem;
+}
+
+/* Usage Examples */
+/*
+body {
+  font-size: px-to-rem(16px);
+}
+*/

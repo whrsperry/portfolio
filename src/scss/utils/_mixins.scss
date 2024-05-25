@@ -1,0 +1,40 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin max-width($pad: 0 4%, $side: 8%) {
+  padding: $pad;
+  margin: 0 auto;
+  max-width: calc(screen-sizes.$max-width + $side);
+  box-sizing: border-box;
+  @media screen and (max-width: screen-sizes.$sp-width) {
+    max-width: 100%;
+  }
+}
+
+@mixin text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin box-shadow($x: 0, $y: 0, $blur: 1rem, $spread: 0, $color: rgba(0, 0, 0, 0.15)) {
+  box-shadow: $x $y $blur $spread $color;
+}
+
+@mixin transition($properties...) {
+  @each $property in $properties {
+      transition: $property 0.3s ease-in-out;
+  }
+}
+
+/* Usage Examples */
+/*
+.box {
+  @include flex-center;
+  @include box-shadow(0, 2px, 5px, 0, rgba(0, 0, 0, 0.1));
+  @include transition(all);
+}
+*/

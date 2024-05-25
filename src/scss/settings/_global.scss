@@ -1,0 +1,23 @@
+@use 'base/color' as clr;
+@use 'base/font-family' as ff;
+@use 'utils/media-queries' as mq;
+
+html {
+  color: clr.$text;
+  font-family: ff.$arial;
+  font-size: 100%;
+  background-color: clr.$background;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: ff.$helvetica;
+}
+
+a {
+  color: clr.$link;
+  text-decoration: none;
+  
+  &:hover {
+      text-decoration: underline;
+  }
+}

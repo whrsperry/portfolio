@@ -1,0 +1,13 @@
+@use 'base/color' as clr;
+
+/* Button Styles */
+.button {
+  display: inline-block;
+  padding: 1rem 1rem;
+  color: clr.$white;
+  background-color: clr.$primary;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}

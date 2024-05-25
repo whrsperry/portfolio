@@ -1,0 +1,47 @@
+{
+  "name": "gulp-boilerplate",
+  "version": "1.0.0",
+  "description": "A Gulp-based boilerplate for web development with Sass, Typescript, HTML minification, autoprefixer, minification, and live reload.",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "boilerplate",
+    "web development",
+    "sass",
+    "typescript",
+    "html",
+    "autoprefixer",
+    "minification",
+    "live reload"
+  ],
+  "author": "Perry Imbuido",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "@babel/preset-typescript": "^7.24.1",
+    "browser-sync": "^3.0.2",
+    "eslint": "^9.3.0",
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^6.0.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-watch": "^5.0.1",
+    "sass": "^1.77.2",
+    "stylelint": "^16.5.0"
+  }
+}
